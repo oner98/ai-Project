@@ -58,11 +58,39 @@ pip install -r requirements.txt
 ```
 
 3. **Programı çalıştır:**
+
+#### Seçenek 1: GUI (Grafik Arayüz) ✨ - ÖNERİLEN
+```bash
+python launcher.py
+```
+Açılan menüden `1. GUI (Grafik Arayüz)` seçeneğini seçin.
+
+**Veya doğrudan:**
+```bash
+python gui_app.py
+```
+
+#### Seçenek 2: CLI (Komut Satırı)
 ```bash
 python main.py
 ```
 
 ## 📖 Kullanım Örneği
+
+### GUI Arayüzü (Önerilen)
+
+Uygulama 6 farklı sekmede organize edilmiş intuitive gürafik arayüzü sunmaktadır:
+
+- **💬 Chatbot:** Yapay Zeka ile doğal dil konuşması
+- **📝 Metin Analizi:** Metinler için detaylı analiz
+- **📊 İstatistikler:** Metin istatistiklerini hesapla
+- **🗂️ Dosya Yönetimi:** Bilgisayarda dosya ve klasörleri yönet
+- **📈 Kelime Frekansı:** En sık kullanılan kelimeleri görselleştir
+- **😊 Duygu Analizi:** Metinlerin duygusal tonunu analiz et
+
+Detaylı GUI rehberi için `GUI_REHBERI.md` dosyasını okuyunuz.
+
+### CLI Arayüzü
 
 ```
 🤖 YAPAY ZEKA YARDIMCISINA HOŞGELDINIZ!
@@ -85,7 +113,41 @@ Lütfen bir işlem seçiniz.
 Seçim (0-7): 1
 ```
 
+## 🎨 GUI Özellikleri
+
+✨ **Modern Tasarım**
+- Temiz ve kullanıcı dostu arayüz
+- Renkli sekme sistemi
+- İkon ve emoji ile görsel zenginlik
+- Duyarlı tasarım
+
+🔧 **Kullanım Kolaylığı**
+- Metin alanlarına sürükle-bırak desteği (kopyala-yapıştır)
+- Görselleştirilmiş sonuçlar
+- Hızlı erişim menüleri
+- Detaylı hata mesajları
+
+📊 **Güçlü Özellikler**
+- Tüm CLI özellikleri GUI'de sunulu
+- Dosya seçme diyalogları
+- Grafik gösterimler
+- Gelişmiş metin işleme
+
 ## 🛠️ Modüller
+
+### `gui_app.py` 🆕
+Grafik arayüz uygulaması. Tkinter kullanarak modern ve kullanıcı dostu bir arayüz sağlar.
+- Tabletli sekme sistemi
+- Metin giriş/çıkış alanları
+- Dosya seçme diyalogları
+- Görselleştirilmiş sonuçlar
+- 6 farklı ana özellik sekmesi
+
+### `launcher.py` 🆕
+Başlatıcı program. CLI ve GUI arasında seçim yapmayı sağlar.
+- Kolay menü seçimi
+- Hata yönetimi
+- Modül kontrol sistemi
 
 ### `ai_assistant.py`
 Ana yapay zeka sınıfı. Chatbot, zaman bilgisi ve duygu analizi fonksiyonları içerir.
@@ -105,7 +167,7 @@ Dosya ve veri yönetimi:
 - Dosya bilgisi alma
 
 ### `main.py`
-Kullanıcı arayüzü ve program kontrol satırı.
+Komut satırı arayüzü ve program kontrol satırı.
 
 ## 🎯 Gelecek Güncellemeler
 
